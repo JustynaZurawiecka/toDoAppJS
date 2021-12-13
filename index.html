@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <style>
+        body {
+            background-color: lightgrey;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            margin: 10px;
+        }
+
+        li:hover {
+            background-color: darkgrey;
+        }
+
+        li,
+        label {
+            font-size: 18px;
+        }
+
+        li {
+            position: relative;
+            margin: 10px;
+        }
+
+        li button {
+            margin: 5px 30px;
+            border: none;
+            background-color: orangered;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+            top: -3px;
+
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My To Do List</h1>
+    <h3>Number of tasks: <span>0</span></h3>
+    <label for="book">Search task: </label>
+    <input type="text" id="book" name="book" autocomplete="off">
+    <ol>
+        <li data-key="0">Do shopping<button data-key="0">DELETE</button></li>
+        <li data-key="1">Clean flat<button data-key="1">DELETE</button></li>
+        <li data-key="2">Cook dinner<button data-key="2">DELETE</button></li>
+        <li data-key="3">Go to the doctor<button data-key="3">DELETE</button></li>
+        <li data-key="4">Do the laundry<button data-key="4">DELETE</button></li>
+        <li data-key="5">Water the flowers<button data-key="5">DELETE</button></li>
+        <li data-key="6">Bake apple cake<button data-key="6">DELETE</button></li>
+        <li data-key="7">Call my mother<button data-key="7">DELETE</button></li>
+        <li data-key="8">Do gymnastics<button data-key="8">DELETE</button></li>
+        <li data-key="9">Call my best friend<button data-key="9">DELETE</button></li>
+    </ol>
+    <form action="">
+        <input type="text" placeholder="New task">
+        <button>ADD</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>
